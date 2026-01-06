@@ -36,7 +36,9 @@ public class JwtGatewayFilter implements GatewayFilter {
             Claims claims = jwtUtil.getClaims(token);
 
             String username = claims.getSubject();
-            String role = claims.get("role", String.class);
+            @SuppressWarnings("unchecked")
+            java.util.List<String> roles = claims.get("roles", java.util.List.class);
+            String role = (roles != null && !roles.isEmpty()) ? roles.get(0) : "USER";
 
             ServerHttpRequest request = exchange.getRequest().mutate()
                     .header("X-User-Username", username)

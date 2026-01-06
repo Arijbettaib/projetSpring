@@ -1,30 +1,30 @@
 package ma.ensa.agentiaservice.config;
 
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.tool.ToolCallbackProvider;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.List;
+
 /**
- * Configuration for Spring AI ChatClient
- * Stub implementation - waiting for Spring AI starters to be resolved
- * 
- * Once spring-ai-starter-ollama is available, this will configure:
- * - OllamaChatClient bean
- * - Connection to Ollama LLM server
+ * Configuration for Spring AI ChatClient with MCP tools
  */
 @Configuration
 public class ChatClientConfiguration {
 
-    // Configuration properties will be added once dependencies are resolved
-    // @Value("${spring.ai.ollama.base-url:http://localhost:11434}")
-    // private String ollamaBaseUrl;
-    //
-    // @Value("${spring.ai.ollama.model:llama2}")
-    // private String model;
-    //
-    // @Bean
-    // public ChatClient chatClient() {
-    //     OllamaApi ollamaApi = new OllamaApi(ollamaBaseUrl);
-    //     OllamaChatClient ollamaChatClient = new OllamaChatClient(ollamaApi)
-    //             .withModel(model);
-    //     return ChatClient.builder(ollamaChatClient).build();
-    // }
+    @Bean
+    public ChatClient chatClient(ChatClient.Builder builder, List<ToolCallbackProvider> toolCallbackProviders) {
+        var chatClientBuilder = builder
+                .defaultSystem("You are a helpful AI assistant for managing products and inventory. " +
+                        "You can help users create, update, delete products and manage stock levels. " +
+                        "Use the available tools to interact with the product and stock databases.");
+        
+        // Register all MCP tool providers
+        for (ToolCallbackProvider provider : toolCallbackProviders) {
+            chatClientBuilder.defaultTools(provider);
+        }
+        
+        return chatClientBuilder.build();
+    }
 }
