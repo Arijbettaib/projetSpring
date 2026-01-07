@@ -1,0 +1,128 @@
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-01-07T12:54:10.105+01:00  INFO 50370 --- [discovery-service] [           main] m.e.d.DiscoveryServiceApplication        : Starting DiscoveryServiceApplication v1.0.0 using Java 17.0.16 with PID 50370 (/Users/amineouhiba/Desktop/arijBe/projetSpring/discovery-service/target/discovery-service-1.0.0.jar started by amineouhiba in /Users/amineouhiba/Desktop/arijBe/projetSpring/discovery-service)
+2026-01-07T12:54:10.107+01:00  INFO 50370 --- [discovery-service] [           main] m.e.d.DiscoveryServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-07T12:54:10.816+01:00  INFO 50370 --- [discovery-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=bc4569a6-a5d7-3231-a785-5d486ea2943d
+2026-01-07T12:54:10.845+01:00  WARN 50370 --- [discovery-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-07T12:54:10.846+01:00  WARN 50370 --- [discovery-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-07T12:54:10.962+01:00  INFO 50370 --- [discovery-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-01-07T12:54:10.969+01:00  INFO 50370 --- [discovery-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-07T12:54:10.969+01:00  INFO 50370 --- [discovery-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-01-07T12:54:10.990+01:00  INFO 50370 --- [discovery-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-07T12:54:10.991+01:00  INFO 50370 --- [discovery-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-01-07T12:54:11.460+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-07T12:54:11.461+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-07T12:54:11.556+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-07T12:54:11.556+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-07T12:54:11.964+01:00  WARN 50370 --- [discovery-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07T12:54:11.973+01:00  INFO 50370 --- [discovery-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-07T12:54:11.983+01:00  INFO 50370 --- [discovery-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-07T12:54:11.983+01:00  INFO 50370 --- [discovery-service] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-01-07T12:54:11.983+01:00  INFO 50370 --- [discovery-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767786851983 with initial instances count: 0
+2026-01-07T12:54:12.003+01:00  INFO 50370 --- [discovery-service] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-01-07T12:54:12.004+01:00  INFO 50370 --- [discovery-service] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-01-07T12:54:12.077+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-01-07T12:54:12.078+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-01-07T12:54:12.078+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-01-07T12:54:12.078+01:00  INFO 50370 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-01-07T12:54:12.100+01:00  INFO 50370 --- [discovery-service] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-01-07T12:54:12.105+01:00  INFO 50370 --- [discovery-service] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-01-07T12:54:12.105+01:00  INFO 50370 --- [discovery-service] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-01-07T12:54:12.110+01:00  INFO 50370 --- [discovery-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-01-07T12:54:12.133+01:00  INFO 50370 --- [discovery-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVICE with eureka with status UP
+2026-01-07T12:54:12.138+01:00  INFO 50370 --- [discovery-service] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-01-07T12:54:12.138+01:00  INFO 50370 --- [discovery-service] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-01-07T12:54:12.138+01:00  INFO 50370 --- [discovery-service] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-01-07T12:54:12.138+01:00  INFO 50370 --- [discovery-service] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-01-07T12:54:12.138+01:00  INFO 50370 --- [discovery-service] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-01-07T12:54:12.139+01:00  INFO 50370 --- [discovery-service] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-01-07T12:54:12.148+01:00  INFO 50370 --- [discovery-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path '/'
+2026-01-07T12:54:12.148+01:00  INFO 50370 --- [discovery-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-01-07T12:54:12.166+01:00  INFO 50370 --- [discovery-service] [           main] m.e.d.DiscoveryServiceApplication        : Started DiscoveryServiceApplication in 2.444 seconds (process running for 2.858)
+2026-01-07T12:54:15.523+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-07T12:54:15.523+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-01-07T12:54:15.524+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-01-07T12:54:15.659+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.99.4.78:auth-service:8080 with status UP (replication=false)
+2026-01-07T12:54:16.239+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.99.4.78:auth-service:8080 with status UP (replication=true)
+2026-01-07T12:54:20.260+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/10.99.4.78:product-service:9091 with status UP (replication=false)
+2026-01-07T12:54:20.767+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/10.99.4.78:product-service:9091 with status UP (replication=true)
+2026-01-07T12:54:24.513+01:00  INFO 50370 --- [discovery-service] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STOCK-SERVICE/10.99.4.78:stock-service:9092 with status UP (replication=false)
+2026-01-07T12:54:25.027+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STOCK-SERVICE/10.99.4.78:stock-service:9092 with status UP (replication=true)
+2026-01-07T12:54:26.861+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/10.99.4.78:gateway-service:8888 with status UP (replication=false)
+2026-01-07T12:54:27.374+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-SERVICE/10.99.4.78:gateway-service:8888 with status UP (replication=true)
+2026-01-07T12:55:12.140+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T12:56:09.756+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AGENT-IA-SERVICE/10.99.4.78:agent-ia-service:8089 with status UP (replication=false)
+2026-01-07T12:56:10.265+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AGENT-IA-SERVICE/10.99.4.78:agent-ia-service:8089 with status UP (replication=true)
+2026-01-07T12:56:12.141+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T12:57:12.146+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-01-07T12:58:12.149+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T12:59:12.153+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:00:12.155+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-01-07T13:01:12.156+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-07T13:02:12.160+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-07T13:03:12.162+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:04:12.163+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-07T13:05:12.166+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:06:12.168+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-07T13:07:12.167+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T13:08:12.168+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T13:09:12.112+01:00  INFO 50370 --- [discovery-service] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-01-07T13:09:12.168+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T13:10:12.173+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-07T13:11:12.186+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:12:12.210+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:13:12.212+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-07T13:14:12.216+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-01-07T13:15:12.218+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-01-07T13:16:12.222+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:17:12.221+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T13:18:12.222+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T13:19:12.226+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-07T13:20:12.228+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-07T13:21:12.232+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-01-07T13:22:12.234+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-01-07T13:23:12.234+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T13:24:12.141+01:00  INFO 50370 --- [discovery-service] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
+2026-01-07T13:24:12.238+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:25:12.241+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-01-07T13:26:12.244+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-01-07T13:27:12.247+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T13:28:12.252+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-01-07T14:27:26.787+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T14:27:26.790+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=3, evictionLimit=1)
+2026-01-07T14:27:26.791+01:00  WARN 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for PRODUCT-SERVICE/10.99.4.78:product-service:9091
+2026-01-07T14:27:26.796+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance PRODUCT-SERVICE/10.99.4.78:product-service:9091 (replication=false)
+2026-01-07T14:27:36.429+01:00  WARN 50370 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: PRODUCT-SERVICE - 10.99.4.78:product-service:9091
+2026-01-07T14:27:36.430+01:00  WARN 50370 --- [discovery-service] [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): PRODUCT-SERVICE - 10.99.4.78:product-service:9091
+2026-01-07T14:27:36.503+01:00  INFO 50370 --- [discovery-service] [io-8761-exec-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/10.99.4.78:product-service:9091 with status UP (replication=false)
+2026-01-07T14:27:37.019+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/10.99.4.78:product-service:9091 with status UP (replication=true)
+2026-01-07T14:35:28.601+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-01-07T14:36:31.243+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T14:42:38.594+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-01-07T14:42:38.601+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=4, evictionLimit=1)
+2026-01-07T14:42:38.605+01:00  WARN 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for STOCK-SERVICE/10.99.4.78:stock-service:9092
+2026-01-07T14:42:38.607+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance STOCK-SERVICE/10.99.4.78:stock-service:9092 (replication=false)
+2026-01-07T14:42:52.552+01:00  WARN 50370 --- [discovery-service] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: STOCK-SERVICE - 10.99.4.78:stock-service:9092
+2026-01-07T14:42:52.553+01:00  WARN 50370 --- [discovery-service] [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): STOCK-SERVICE - 10.99.4.78:stock-service:9092
+2026-01-07T14:42:52.599+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STOCK-SERVICE/10.99.4.78:stock-service:9092 with status UP (replication=false)
+2026-01-07T14:42:53.111+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance STOCK-SERVICE/10.99.4.78:stock-service:9092 with status UP (replication=true)
+2026-01-07T14:51:00.864+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-01-07T14:51:00.866+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=2, evictionLimit=1)
+2026-01-07T14:51:00.866+01:00  WARN 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for AUTH-SERVICE/10.99.4.78:auth-service:8080
+2026-01-07T14:51:00.867+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance AUTH-SERVICE/10.99.4.78:auth-service:8080 (replication=false)
+2026-01-07T14:51:06.345+01:00  WARN 50370 --- [discovery-service] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 10.99.4.78:auth-service:8080
+2026-01-07T14:51:06.345+01:00  WARN 50370 --- [discovery-service] [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): AUTH-SERVICE - 10.99.4.78:auth-service:8080
+2026-01-07T14:51:06.383+01:00  INFO 50370 --- [discovery-service] [io-8761-exec-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.99.4.78:auth-service:8080 with status UP (replication=false)
+2026-01-07T14:51:06.904+01:00  INFO 50370 --- [discovery-service] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance AUTH-SERVICE/10.99.4.78:auth-service:8080 with status UP (replication=true)
+2026-01-07T14:52:02.553+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-01-07T15:30:08.660+01:00  INFO 50370 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms

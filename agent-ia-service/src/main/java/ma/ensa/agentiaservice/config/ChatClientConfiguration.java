@@ -1,6 +1,5 @@
 package ma.ensa.agentiaservice.config;
 
-import ma.ensa.agentiaservice.tools.ProductTools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -26,15 +25,14 @@ public class ChatClientConfiguration {
     }
 
     @Bean
-    public ChatClient chatClient(ChatClient.Builder builder, ProductTools productTools, ChatMemory chatMemory) {
-        System.out.println("DEBUG: Registering ProductTools directly with ChatClient");
+    public ChatClient chatClient(ChatClient.Builder builder, ChatMemory chatMemory) {
+        System.out.println("DEBUG: Configuring ChatClient with MCP tools from product-service and stock-service");
         
         return builder
                 .defaultSystem("You are a helpful AI assistant for managing products and inventory. " +
-                        "You have access to tools to interact with the product database. " +
-                        "ALWAYS use the get_all_products tool when users ask to list or see products.")
+                        "You have access to MCP tools from product-service and stock-service to interact with the database. " +
+                        "Use the available MCP tools to help users manage products and stock.")
                 .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
-                .defaultTools(productTools)
                 .build();
     }
 }
