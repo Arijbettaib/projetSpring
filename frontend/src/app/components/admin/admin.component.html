@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="navbar">
+        <h1>🛠️ Admin Dashboard</h1>
+        <button (click)="goBack()"
+            style="background:none; border:none; color:#3498db; cursor:pointer; font-size:1.1rem;">
+            ← Retour au Chat
+        </button>
+    </div>
+
+    <!-- Add Product Form -->
+    <div class="card">
+        <h2>Ajouter un Produit</h2>
+        <div style="display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 1rem; align-items: end;">
+            <div class="form-group">
+                <label>Nom du Produit</label>
+                <input type="text" [(ngModel)]="newProduct.name" placeholder="Ex: Ordinateur">
+            </div>
+            <div class="form-group">
+                <label>Prix (€)</label>
+                <input type="number" [(ngModel)]="newProduct.price" placeholder="0.00">
+            </div>
+            <div class="form-group">
+                <label>Quantité</label>
+                <input type="number" [(ngModel)]="newProduct.quantity" placeholder="0">
+            </div>
+            <div class="form-group">
+                <button class="btn-add" (click)="addProduct()">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product List -->
+    <div class="card">
+        <h2>📦 Inventaire Actuel</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of products">
+                    <td>{{p.id}}</td>
+                    <td style="font-weight: 500;">{{p.name}}</td>
+                    <td>{{p.price | currency:'EUR'}}</td>
+                    <td>
+                        <span [style.color]="p.quantity < 5 ? 'red' : 'green'" style="font-weight: bold;">
+                            {{p.quantity}}
+                        </span>
+                    </td>
+                    <td>
+                        <button class="btn-delete" (click)="deleteProduct(p.id)">Supprimer</button>
+                    </td>
+                </tr>
+                <tr *ngIf="products.length === 0">
+                    <td colspan="5" style="text-align: center; color: #999;">Aucun produit trouvé.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

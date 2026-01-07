@@ -1,0 +1,42 @@
+<div class="chat-container">
+    <header class="chat-header">
+        <div class="header-info">
+            <div class="agent-avatar">🤖</div>
+            <div class="agent-details">
+                <h2>AI Agent</h2>
+                <span class="status-badge">Online</span>
+            </div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <button *ngIf="isAdmin" class="logout-btn" style="background-color: #3498db;" (click)="goToAdmin()">
+                🛠️ Admin
+            </button>
+            <button class="logout-btn" (click)="logout()">Logout</button>
+        </div>
+    </header>
+
+    <main class="chat-window">
+        <div class="messages-list">
+            <div *ngFor="let msg of messages" class="message-wrapper" [ngClass]="msg.sender">
+                <div class="message-bubble">
+                    {{ msg.text }}
+                </div>
+            </div>
+            <div *ngIf="isTyping" class="typing-indicator">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="chat-input-area">
+        <form (ngSubmit)="sendMessage()" class="input-form">
+            <input type="text" name="message" [(ngModel)]="newMessage" placeholder="Écrivez votre message..."
+                autocomplete="off" [disabled]="isTyping">
+            <button type="submit" [disabled]="!newMessage.trim() || isTyping">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+            </button>
+        </form>
+    </footer>
+</div>

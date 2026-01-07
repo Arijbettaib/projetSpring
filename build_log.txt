@@ -1,0 +1,318 @@
+﻿[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Microservice AI Agent System                                       [pom]
+[INFO] discovery-service                                                  [jar]
+[INFO] gateway-service                                                    [jar]
+[INFO] auth-service                                                       [jar]
+[INFO] product-service                                                    [jar]
+[INFO] stock-service                                                      [jar]
+[INFO] agent-ia-service                                                   [jar]
+[INFO] 
+[INFO] --------------------< ma.ensa:mini-projet-agent-ia >--------------------
+[INFO] Building Microservice AI Agent System 1.0.0                        [1/7]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ mini-projet-agent-ia ---
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ mini-projet-agent-ia ---
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ mini-projet-agent-ia ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\mini-projet-agent-ia\1.0.0\mini-projet-agent-ia-1.0.0.pom
+[INFO] 
+[INFO] ---------------------< ma.ensa:discovery-service >----------------------
+[INFO] Building discovery-service 1.0.0                                   [2/7]
+[INFO]   from discovery-service\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ discovery-service ---
+[INFO] Deleting C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ discovery-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ discovery-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ discovery-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ discovery-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ discovery-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ discovery-service ---
+[INFO] Building jar: C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\target\discovery-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ discovery-service ---
+[INFO] Replacing main artifact C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\target\discovery-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\target\discovery-service-1.0.0.jar.original
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ discovery-service ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\discovery-service\1.0.0\discovery-service-1.0.0.pom
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\discovery-service\target\discovery-service-1.0.0.jar to C:\Users\arijb\.m2\repository\ma\ensa\discovery-service\1.0.0\discovery-service-1.0.0.jar
+[INFO] 
+[INFO] ----------------------< ma.ensa:gateway-service >-----------------------
+[INFO] Building gateway-service 1.0.0                                     [3/7]
+[INFO]   from gateway-service\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ gateway-service ---
+[INFO] Deleting C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ gateway-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ gateway-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 5 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ gateway-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ gateway-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ gateway-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ gateway-service ---
+[INFO] Building jar: C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\target\gateway-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ gateway-service ---
+[INFO] Replacing main artifact C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\target\gateway-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\target\gateway-service-1.0.0.jar.original
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ gateway-service ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\gateway-service\1.0.0\gateway-service-1.0.0.pom
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\gateway-service\target\gateway-service-1.0.0.jar to C:\Users\arijb\.m2\repository\ma\ensa\gateway-service\1.0.0\gateway-service-1.0.0.jar
+[INFO] 
+[INFO] ------------------------< ma.ensa:auth-service >------------------------
+[INFO] Building auth-service 1.0.0                                        [4/7]
+[INFO]   from auth-service\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ auth-service ---
+[INFO] Deleting C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ auth-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ auth-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 9 source files with javac [debug parameters release 17] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ auth-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ auth-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ auth-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ auth-service ---
+[INFO] Building jar: C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\target\auth-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ auth-service ---
+[INFO] Replacing main artifact C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\target\auth-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\target\auth-service-1.0.0.jar.original
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ auth-service ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\auth-service\1.0.0\auth-service-1.0.0.pom
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\auth-service\target\auth-service-1.0.0.jar to C:\Users\arijb\.m2\repository\ma\ensa\auth-service\1.0.0\auth-service-1.0.0.jar
+[INFO] 
+[INFO] ----------------------< ma.ensa:product-service >-----------------------
+[INFO] Building product-service 1.0.0                                     [5/7]
+[INFO]   from product-service\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ product-service ---
+[INFO] Deleting C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ product-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ product-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug parameters release 17] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ product-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ product-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ product-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ product-service ---
+[INFO] Building jar: C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\target\product-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ product-service ---
+[INFO] Replacing main artifact C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\target\product-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\target\product-service-1.0.0.jar.original
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ product-service ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\product-service\1.0.0\product-service-1.0.0.pom
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\product-service\target\product-service-1.0.0.jar to C:\Users\arijb\.m2\repository\ma\ensa\product-service\1.0.0\product-service-1.0.0.jar
+[INFO] 
+[INFO] -----------------------< ma.ensa:stock-service >------------------------
+[INFO] Building stock-service 1.0.0                                       [6/7]
+[INFO]   from stock-service\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ stock-service ---
+[INFO] Deleting C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ stock-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ stock-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug parameters release 17] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ stock-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ stock-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ stock-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ stock-service ---
+[INFO] Building jar: C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\target\stock-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ stock-service ---
+[INFO] Replacing main artifact C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\target\stock-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\target\stock-service-1.0.0.jar.original
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ stock-service ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\stock-service\1.0.0\stock-service-1.0.0.pom
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\stock-service\target\stock-service-1.0.0.jar to C:\Users\arijb\.m2\repository\ma\ensa\stock-service\1.0.0\stock-service-1.0.0.jar
+[INFO] 
+[INFO] ----------------------< ma.ensa:agent-ia-service >----------------------
+[INFO] Building agent-ia-service 1.0.0                                    [7/7]
+[INFO]   from agent-ia-service\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ agent-ia-service ---
+[INFO] Deleting C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ agent-ia-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ agent-ia-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 10 source files with javac [debug parameters release 17] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ agent-ia-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ agent-ia-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ agent-ia-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ agent-ia-service ---
+[INFO] Building jar: C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\target\agent-ia-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.3.5:repackage (repackage) @ agent-ia-service ---
+[INFO] Replacing main artifact C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\target\agent-ia-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\target\agent-ia-service-1.0.0.jar.original
+[INFO] 
+[INFO] --- install:3.1.3:install (default-install) @ agent-ia-service ---
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\pom.xml to C:\Users\arijb\.m2\repository\ma\ensa\agent-ia-service\1.0.0\agent-ia-service-1.0.0.pom
+[INFO] Installing C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\target\agent-ia-service-1.0.0.jar to C:\Users\arijb\.m2\repository\ma\ensa\agent-ia-service\1.0.0\agent-ia-service-1.0.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Microservice AI Agent System 1.0.0:
+[INFO] 
+[INFO] Microservice AI Agent System ....................... SUCCESS [  0.672 s]
+[INFO] discovery-service .................................. SUCCESS [  5.155 s]
+[INFO] gateway-service .................................... SUCCESS [  3.016 s]
+[INFO] auth-service ....................................... SUCCESS [  4.641 s]
+[INFO] product-service .................................... SUCCESS [  4.916 s]
+[INFO] stock-service ...................................... SUCCESS [  5.265 s]
+[INFO] agent-ia-service ................................... SUCCESS [  5.449 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  29.640 s
+[INFO] Finished at: 2026-01-07T01:21:24+01:00
+[INFO] ------------------------------------------------------------------------

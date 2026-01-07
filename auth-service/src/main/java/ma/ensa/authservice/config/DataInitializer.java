@@ -14,7 +14,7 @@ import java.util.List;
 @Configuration
 public class DataInitializer {
 
-    //@Bean
+    @Bean
     CommandLineRunner initUsers(
             UserRepository userRepo,
             AppRoleRepo roleRepo,
@@ -24,8 +24,11 @@ public class DataInitializer {
 
             AppRole userRole = roleRepo.findByName("USER")
                     .orElseGet(() -> roleRepo.save(new AppRole("USER")));
+            AppRole adminRole = roleRepo.findByName("ADMIN")
+                    .orElseGet(() -> roleRepo.save(new AppRole("ADMIN")));
 
             userRepo.findByUsername("user").ifPresent(userRepo::delete);
+            userRepo.findByUsername("admin").ifPresent(userRepo::delete);
 
             User user1 = new User(
                     "user",
@@ -33,21 +36,27 @@ public class DataInitializer {
                     List.of(userRole)
             );
 
-            userRepo.save(user1);
+            User admin = new User(
+                    "admin",
+                    encoder.encode("admin"),
+                    List.of(userRole, adminRole)
+            );
+
+            userRepo.saveAll(List.of(user1, admin));
         };
     }
 
-    //@Bean
+    @Bean
     CommandLineRunner initRoles(
             AppRoleRepo roleRepo
     ) {
         return args -> {
-
-            roleRepo.findByName("ROLE_ADMIN")
-                    .orElseGet(() -> roleRepo.save(new AppRole("USER")));
-            roleRepo.findByName("ROLE_ADMIN")
-                    .orElseGet(() -> roleRepo.save(new AppRole("ADMIN")));
-
+            if (roleRepo.findByName("USER").isEmpty()) {
+                roleRepo.save(new AppRole("USER"));
+            }
+            if (roleRepo.findByName("ADMIN").isEmpty()) {
+                roleRepo.save(new AppRole("ADMIN"));
+            }
         };
     }
 

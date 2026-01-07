@@ -1,0 +1,119 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< ma.ensa:agent-ia-service >----------------------
+[INFO] Building agent-ia-service 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ agent-ia-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ agent-ia-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ agent-ia-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 10 source files with javac [debug parameters release 17] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ agent-ia-service ---
+[INFO] skip non existing resourceDirectory C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ agent-ia-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ agent-ia-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ agent-ia-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-01-07T02:54:15.190+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] m.e.a.AgentIaServiceApplication          : Starting AgentIaServiceApplication using Java 21.0.2 with PID 24268 (C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service\target\classes started by arijb in C:\Users\arijb\Downloads\mini-projet-agent-ia\mini-projet-agent-ia\agent-ia-service)
+2026-01-07T02:54:15.199+01:00 DEBUG 24268 --- [agent-ia-service] [  restartedMain] m.e.a.AgentIaServiceApplication          : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-01-07T02:54:15.201+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] m.e.a.AgentIaServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-01-07T02:54:15.256+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-01-07T02:54:15.256+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-01-07T02:54:16.394+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9a2a51e4-5a20-3687-b962-8e6869aba209
+2026-01-07T02:54:16.726+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-07T02:54:16.730+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-07T02:54:16.733+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-01-07T02:54:16.733+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-07T02:54:16.735+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-01-07T02:54:17.131+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-01-07T02:54:17.147+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-07T02:54:17.147+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-01-07T02:54:17.248+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-07T02:54:17.249+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1991 ms
+2026-01-07T02:54:18.160+01:00  INFO 24268 --- [agent-ia-service] [ient-1-Worker-3] i.m.client.LifecycleInitializer          : Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=CompletionCapabilities[], experimental=null, logging=LoggingCapabilities[], prompts=PromptCapabilities[listChanged=true], resources=ResourceCapabilities[subscribe=false, listChanged=true], tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=stock-service-mcp, title=null, version=1.0.0] and Instructions null
+2026-01-07T02:54:18.190+01:00  INFO 24268 --- [agent-ia-service] [ient-2-Worker-2] i.m.client.LifecycleInitializer          : Server response with Protocol: 2024-11-05, Capabilities: ServerCapabilities[completions=CompletionCapabilities[], experimental=null, logging=LoggingCapabilities[], prompts=PromptCapabilities[listChanged=true], resources=ResourceCapabilities[subscribe=false, listChanged=true], tools=ToolCapabilities[listChanged=true]], Info: Implementation[name=product-service-mcp, title=null, version=1.0.0] and Instructions null
+2026-01-07T02:54:18.203+01:00 DEBUG 24268 --- [agent-ia-service] [  restartedMain] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-01-07T02:54:18.583+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-01-07T02:54:19.609+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-07T02:54:20.638+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-07T02:54:20.661+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-01-07T02:54:21.680+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-07T02:54:21.719+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-01-07T02:54:21.729+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-01-07T02:54:21.731+01:00  WARN 24268 --- [agent-ia-service] [  restartedMain] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-01-07T02:54:21.799+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-01-07T02:54:21.828+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-01-07T02:54:21.833+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-01-07T02:54:21.844+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-01-07T02:54:22.047+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-01-07T02:54:22.050+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-01-07T02:54:22.052+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-01-07T02:54:22.053+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1767750862053 with initial instances count: 4
+2026-01-07T02:54:22.056+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AGENT-IA-SERVICE with eureka with status UP
+2026-01-07T02:54:22.057+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1767750862057, current=UP, previous=STARTING]
+2026-01-07T02:54:22.058+01:00  INFO 24268 --- [agent-ia-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AGENT-IA-SERVICE/localhost:agent-ia-service:8089: registering service...
+2026-01-07T02:54:22.087+01:00  INFO 24268 --- [agent-ia-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AGENT-IA-SERVICE/localhost:agent-ia-service:8089 - registration status: 204
+2026-01-07T02:54:22.303+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2026-01-07T02:54:22.304+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8089
+2026-01-07T02:54:23.315+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-07T02:54:24.323+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2026-01-07T02:54:24.333+01:00  INFO 24268 --- [agent-ia-service] [  restartedMain] m.e.a.AgentIaServiceApplication          : Started AgentIaServiceApplication in 10.703 seconds (process running for 11.473)
+2026-01-07T02:56:22.161+01:00  INFO 24268 --- [agent-ia-service] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AGENT-IA-SERVICE/localhost:agent-ia-service:8089 - Re-registering apps/AGENT-IA-SERVICE
+2026-01-07T02:56:22.162+01:00  INFO 24268 --- [agent-ia-service] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AGENT-IA-SERVICE/localhost:agent-ia-service:8089: registering service...
+2026-01-07T02:56:22.167+01:00  INFO 24268 --- [agent-ia-service] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AGENT-IA-SERVICE/localhost:agent-ia-service:8089 - registration status: 204
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:54 min
+[INFO] Finished at: 2026-01-07T02:57:58+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.5:run (default-cli) on project agent-ia-service: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
